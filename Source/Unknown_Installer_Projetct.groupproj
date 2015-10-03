@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{DF1AC6FA-896D-4C26-B3A2-D8670FF3CE95}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Unknown Installer\Unknown_Installer.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Stub\Stub.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Unknown_Installer">
+        <MSBuild Projects="Unknown Installer\Unknown_Installer.dproj"/>
+    </Target>
+    <Target Name="Unknown_Installer:Clean">
+        <MSBuild Projects="Unknown Installer\Unknown_Installer.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Unknown_Installer:Make">
+        <MSBuild Projects="Unknown Installer\Unknown_Installer.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Stub">
+        <MSBuild Projects="Stub\Stub.dproj"/>
+    </Target>
+    <Target Name="Stub:Clean">
+        <MSBuild Projects="Stub\Stub.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Stub:Make">
+        <MSBuild Projects="Stub\Stub.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Unknown_Installer;Stub"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Unknown_Installer:Clean;Stub:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Unknown_Installer:Make;Stub:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
