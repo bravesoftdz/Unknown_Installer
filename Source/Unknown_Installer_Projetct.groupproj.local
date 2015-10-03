@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>2015/10/02 10:34:39.000.186,J:\Projetos\Delphi\Unknown Installer\Source\Unknown_Installer_Projetct.groupproj=C:\Users\Maickonn\Documents\Embarcadero\Studio\Projects\ProjectGroup1.groupproj</Transaction>
+    <Transaction>2015/10/02 10:34:39.000.186,C:\Users\Maickonn\Documents\Embarcadero\Studio\Projects\ProjectGroup1.groupproj=J:\Projetos\Delphi\Unknown Installer\Source\Unknown_Installer_Projetct.groupproj</Transaction>
   </Transactions>
 	<Default.Personality>
-		<Projects ActiveProject="J:\Projetos\Delphi\Unknown_Installer\Source\Unknown Installer\Unknown_Installer.dproj"/>
+		<Projects ActiveProject="J:\Projetos\Delphi\Unknown_Installer\Source\Stub\Stub.dproj"/>
 	</Default.Personality>
 </BorlandProject>
