@@ -12,7 +12,7 @@ Program written in Delphi to create installers. || Programa escrito em Delphi pa
 
 ------------------------------------------------------------------------
 
-O Unknown Installer é um Software escrito em Delphi, na qual seu objetivo é criar instaladores de forma rápida.
+O Unknown Installer é um Software escrito em Delphi XE6, na qual seu objetivo é criar instaladores de forma rápida.
 
 O Software, possui opções simples, como Escolher .exe principal, escolher o diretório, abrir algum arquivo após a instalação, versão etc.
 
